@@ -1,5 +1,5 @@
 /*
-$Id: str2png.c 820 2005-06-23 01:24:25Z eric $
+$Id: str2png.c 1049 2006-10-31 06:24:38Z eric $
 Copyright 2004, 2005 Eric L. Smith <eric@brouhaha.com>
 
 Nonpareil is free software; you can redistribute it and/or modify it
@@ -407,7 +407,7 @@ int main (int argc, char *argv[])
 
   progname = newstr (argv [0]);
 
-  gdk_init (& argc, & argv);
+  g_type_init ();
 
   while (--argc)
     {
